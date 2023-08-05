@@ -36,6 +36,7 @@ body {
 }
 
 .sidebar-title {
+    color: #B452CD;
     margin-top: 30px;
     padding-right: 20px;
     text-align: left;
@@ -61,12 +62,6 @@ body {
     margin: 0 auto;
 }
 
-.menu-toggle {
-    color: #ccc;
-    font-size: 24px;
-    cursor: pointer;
-}
-
 .content {
     flex-grow: 1;
     padding: 20px;
@@ -86,6 +81,7 @@ h2 {
 }
 
 .date-time {
+    color: #B452CD;
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
