@@ -1,0 +1,151 @@
+/* Reset some default styling */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+}
+
+h3 {
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Courier New", monospace;
+    background-color: #1a1a1a;
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.sidebar {
+    background-color: #333;
+    padding: 20px;
+    /* width: 200px; */
+    height: 100vh;
+    transition: transform 0.3s ease;
+}
+
+.sidebar.show-sidebar {
+    transform: translateY(0);
+}
+
+.sidebar ul ul {
+    margin-left: 20px;
+}
+
+.sidebar-title {
+    margin-top: 30px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 30px;
+
+}
+
+.top-bar {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: none;
+    margin-bottom: 40px;
+}
+
+.logo {
+    color: #ccc;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menu-toggle {
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.log-entry {
+    background-color: #444;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.date-time {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.activities ul {
+    list-style: disc;
+}
+
+ul li {
+    margin-left: 1em; /* Adjust margin for bullet point alignment */
+    position: relative; /* Create a relative positioning context */
+}
+
+
+.notes-title {
+    color: #888;
+    font-size: 20px;
+    margin-bottom: 5px;
+   
+}
+
+.notes {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    
+    
+    .top-bar {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+
+    }
+    
+    .content {
+        padding-top: 30px;
+    }
+    
+    .show-sidebar .sidebar {
+        display: block;
+    }
+    
+    .expanded {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+}
