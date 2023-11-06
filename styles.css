@@ -36,13 +36,21 @@ body {
 }
 
 .sidebar-title {
-    color: #B452CD;
+    color: #b460c9;
     margin-top: 30px;
     padding-right: 20px;
     text-align: left;
     font-size: 30px;
 
 }
+
+
+.sidebar-title a {
+    text-decoration: none; /* Remove underlines on links */
+    color: inherit; /* Inherit text color from the parent element */
+}
+
+
 
 .top-bar {
     background-color: #333;
@@ -78,6 +86,7 @@ h2 {
     padding: 10px;
     margin-top: 25px;
     margin-bottom: 15px;
+    max-width: 1150px;
 }
 
 .date-time {
